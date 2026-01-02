@@ -15,7 +15,7 @@ export type ThrewEvent = IBaseEvent<'threw', ThrewEventPayload>;
 export const threwParser = defineParser<ThrewEvent>({
     type: 'threw',
 
-    patterns: [concatPattern`^(?<player>${entityRe}) threw (?<item>.+) \\[(?<playerPosition>${vectorRe})\\].*?entindex (?<entindex>\\d+)\\)?$`],
+    patterns: [concatPattern`^(?<player>${entityRe}) threw (?<item>.+?) \\[(?<playerPosition>${vectorRe})\\](?:.*?entindex (?<entindex>\\d+)\\)?)?$`],
 
     parse({
         player,
