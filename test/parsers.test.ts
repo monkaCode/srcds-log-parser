@@ -1,7 +1,6 @@
 import { describe, it } from 'node:test';
 import { strictEqual, deepStrictEqual, ok } from 'node:assert';
-
-import { Team, parse } from '..';
+import { parse, Team } from '../src';
 
 const EVENT_DATE = '10/20/2020 - 10:30:50';
 const eventDate = new Date(EVENT_DATE.replace(' - ', ' '));
