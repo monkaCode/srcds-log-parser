@@ -5,7 +5,7 @@ import { type IBaseEvent, defineParser } from './parser';
 export type ThrewEventPayload = {
     player: Entity;
     item: string;
-    entindex?: number;
+    entindex?: number | undefined;
 };
 
 export type ThrewEvent = IBaseEvent<'threw', ThrewEventPayload>;
