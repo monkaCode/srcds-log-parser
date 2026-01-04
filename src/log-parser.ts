@@ -4,6 +4,7 @@ import {
     BlindedEvent,
     type ConnectionEvent,
     type EntityTriggeredEvent,
+    GameOverEvent,
     type IBaseParser,
     type KilledEvent,
     type PlayerUpdateEvent,
@@ -27,6 +28,7 @@ import {
     blindedParser,
     connectionParser,
     entityTriggeredParser,
+    gameOverParser,
     killedParser,
     playerUpdateParser,
     projectileSpawnedParser,
@@ -50,6 +52,7 @@ export const defaultParsers = [
     blindedParser,
     connectionParser,
     entityTriggeredParser,
+    gameOverParser,
     killedParser,
     playerUpdateParser,
     projectileSpawnedParser,
@@ -74,6 +77,7 @@ export type Events =
     | BlindedEvent
     | ConnectionEvent
     | EntityTriggeredEvent
+    | GameOverEvent
     | KilledEvent
     | PlayerUpdateEvent
     | ProjectileSpawnedEvent

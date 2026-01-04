@@ -5,6 +5,7 @@ export * from './attacked';
 export * from './blinded';
 export * from './connection';
 export * from './entity-triggered';
+export * from './game-over';
 export * from './killed';
 export * from './player-update';
 export * from './projectile-spawned';
